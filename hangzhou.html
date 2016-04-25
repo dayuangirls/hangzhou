@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Hangzhou</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <meta charset="utf-8"> <!--Set characters to display properly -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Forces IE to use latest rendering engine-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- "Viewport" is the base area to let browser to use the full screen space -->
+       
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    
+    <body>
+     <nav class="navbar navbar-default navbar-fixed-top">   
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">杭州</a>
+            </div>                      <!-- navbar-header ends -->
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="hangzhou.html">Hangzhou</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>                      <!-- nav-collapse ends -->
+          </div>                        <!-- container ends -->
+      </nav>                            <!-- End of Navigation Header -->
+    
+    <div class="jumbotron bg">     <!-- Jumbotron starts -->
+      <div class="container">
+        <p id="english"><br>Hangzhou &#x2014 Paradise on the Earth!</p>
+        <button onclick="newTask() ;">Chinese</button>
+        
+<!-- Change Heading from English to Chinese -->    
+      <script>    
+        function  newTask () {
+        var changeText =
+        document.getElementById("english");
+        changeText.innerHTML= "<br><em><strong>杭  州  &#x2014  人 间 天 堂!</strong></em>";
+        }
+      </script>
+   
+      <button><a href="hangzhou.html">English</a></button>
+       
+      </div>                    <!-- Container ends -->
+    </div>                      <!-- Jumbotron ends -->  
+    
+        <!-- Tabbed Boxes start -->
+            <div class="container-fluid">
+              <!-- Nab tabs -->
+              <ul class="nav nav-tabs">
+                  <li class="active"><a href="#lake" data-toggle="tab">West Lake</a></li>
+                  <li><a href="#legend" data-toggle="tab">West Lake Legend</a></li>
+                  <li><a href="#canal" data-toggle="tab">Grand Canal</a></li>
+                  <li><a href="#tea" data-toggle="tab">Tea Plantation</a></li>
+                  <li><a href="#cuisine" data-toggle="tab">Local Cuisines</a></li>
+              </ul>
+              
+              <!-- Tab panes starts -->
+              <div class="tab-content">
+                
+                <!-- West Lake Tab starts -->
+                  <div class="tab-pane active" id="lake">
+                    <div class="row">                           <!-- Row begins -->
+                      <div class="col-md-3 col-md-offset-2">    <!-- Column1 begins -->
+                        <h3 id="titlectr">WEST LAKE</h3>            
+                        <br><p>In ancient times, West Lake was just a shallow sea gulf before it evolved into a residual lake. Today West Lake is like a shining pearl inlaid on the vast land of China, with 2 courses ways deviding the lake into 3 parts, with islands scattering in the lake, and lakes lying in the islands.</p>
+                        <p>The legend has it that West Lake was a heavenly jewel fallen to earth.</p>
+                      </div>                                    <!-- Column1 ends -->
+                      
+                      <div class="col-md-7">                    <!-- Column2 begins -->
+                        <div id="gallery">
+                          
+                          <img src="images/westlake/lake1.jpg" id="main-img">
+                          
+                          <ul class="switch">
+                            <li><img src="images/westlake/lake2.jpg" /></li>
+                            <li><img src="images/westlake/lake3.jpg" /></li>
+                            <li><img src="images/westlake/lake4.jpg" /></li>
+                            <li><img src="images/westlake/lake1.jpg" /></li>
+                          </ul>
+                        </div>  <!-- id="gallery" ends -->
+                      </div>    <!-- Column2 ends -->
+                    </div>      <!-- Row ends -->
+                  </div>        <!-- West Lake Tab ends -->
+                  
+                  <!-- Legendary Tab starts -->
+                  <div class="tab-pane" id="legend">
+                    <div class="row">                           <!-- Row begins -->
+                      <div class="col-md-3 col-md-offset-2">    <!-- Column1 begins -->
+                        <h3 id="titlectr">The Legend of White Snake<br>&#x2014
+                        A  <span id="heart" class="glyphicon glyphicon-heart glyphicon-red"></span>  Story</h3>
+                      
+                       <br><p>Once upon time there were a beautiful yong woman named "Madame White" and an evil old monk named "Monk Fa-Hai" living in Hangzhou. Prior to having transformed themselves into the human forms, the two used to be a white snake and a turtle practicing magic power at the bottom of West Lake.</p>
+                       <p>Unfortunately the monk had been holding grudges against Madame White from their snake-turtle days. Once he learned that she had fallen in love with a young man &#x2014 a real human being, got married and had a baby boy, Monk Fa-Hai decided to destroy her happy life. He eventually captured Madame White by performing evil power and kept her under Thunder Peak Pagoda.</p>
+                       <p>There was a famous saying: “Only when the Thunder Peak Pagoda collapses, then Madame White will be freed.”
+                       <p>Click on the button to see what would happen!</p>
+                    </div>                                    <!-- Column1 ends -->
+                    
+                    <div class="col-md-7">                  <!-- Column2 begins -->
+                        <div id="pagoda">                 <!-- Animation: Shake & Explode begins -->
+                          <img src="images/legend/pagoda.jpg" class="img-responsive center-block">
+                          <button id="explode" class="img-responsive center-block">Click</button>
+                        </div>                            <!-- Animation: Shake & Explode ends -->
+
+                        <div id="madame">                 <!-- Animation: FadeIn begins --> 
+                          <img src="images/legend/madame.jpg" class="img-responsive center-block">
+                          <button id="fadein" class="img-responsive center-block">Madame White</button>
+                        </div>                            <!-- Animation: FadeIn ends -->
+                      </div>                              <!-- Column2 ends -->
+                    </div>                                <!-- Row ends -->
+                  </div>                                  <!-- Legendary Tab ends -->
+              
+              <!-- Grand Canal Tab starts -->
+                  <div class="tab-pane" id="canal">
+                      <div class="row">                   <!-- Row begins -->
+                        <div class="col-md-3 col-md-offset-2">    <!-- Column1 begins -->
+                          <h3 id="titlectr">GRAND CANAL</h3>
+                          <br><p>The Grand Canal is one of the greatest projects endeavored in ancient China as well as the longest man-made waterway in world. With its northernmost end in Beijing and the southernmost end in Habgzhou, the canal runs a total length of 1,794 kilometers, interconnecting the Yangtze, Yellow, Huai, Haihe, and Qiantang rivers.</p>
+                        </div>
+                        
+                      <div class="col-md-7">                      <!-- Column2 begins -->
+                      <div id="gallery">
+                          <img src="images/grandcanal/canal1.jpg" id="main-img2">
+                          
+                          <ul class="switch">
+                            <li><img src="images/grandcanal/canal2.jpg" /></li>
+                            <li><img src="images/grandcanal/canal3.jpg" /></li>
+                            <li><img src="images/grandcanal/canal4.jpg" /></li>
+                            <li><img src="images/grandcanal/canal1.jpg" /></li>
+                          </ul>
+                        </div>
+                      </div>    <!-- Column2 ends -->
+                    </div>      <!-- Row ends -->
+                  </div>        <!-- Grand Canal Tab ends -->
+                
+                <!-- Tea Plantation Tab starts -->
+                  <div class="tab-pane" id="tea">
+                      <div class="row">                   <!-- Row begins -->
+                      <div class="col-md-3 col-md-offset-2">    <!-- Column1 begins -->
+                        <h3 id="titlectr">TEA PLANTATION</h3>
+                        <br><p>Dragon-Well green tea is one of China's most famous green teas, originating from Hangzhou. This tea has a very distinctive shape: smooth and perfectly flattened along the inside vein of the leaf, the result of highly skilled shaping in a hot wok. This process, known as pan-firing or pan-frying, gives the tea an inviting, toasty aroma. The super-high quality Dragon-Well green tea leaves are ususally processed by hands in hot woks.</p>
+                      </div>                              <!-- Column1 ends -->
+                      
+                      <div class="col-md-7">    <!-- Column2 begins -->
+                      <div id="gallery">
+                          <img src="images/tea/tea1.jpg" id="main-img3">
+                          
+                          <ul class="switch">
+                            <li><img src="images/tea/tea2.jpg" /></li>
+                            <li><img src="images/tea/tea3.jpg" /></li>
+                            <li><img src="images/tea/tea4.jpg" /></li>
+                            <li><img src="images/tea/tea1.jpg" /></li>
+                        </ul>
+                      </div>
+                      </div>    <!-- Column2 ends -->
+                    </div>      <!-- Row ends -->
+                  </div>        <!-- Tea Plantation Tab ends -->
+                  
+                  <!-- Local Cuisines Tab starts -->
+                  <div class="tab-pane" id="cuisine">
+                      <div class="row">                   <!-- Row begins -->
+                      <div class="col-md-3 col-md-offset-2">    <!-- Column1 begins -->
+                        <h3 id="titlectr">LOCAL CUISINES</h3>
+                        <br><p><span class="glyphicon glyphicon-star"></span> Sweet & Sour West Lake Fish</p>
+                        <p><span class="glyphicon glyphicon-star"></span> Shrimps with Dragon-Well Green Tea Leaves</p>
+                        <p><span class="glyphicon glyphicon-star"></span> Beggar's Chicken</p>
+                        <p><span class="glyphicon glyphicon-star"></span> Aunt Song's Fish Soup</p>
+                      </div>                              <!-- Column1 ends -->
+                      
+                      <div class="col-md-7">    <!-- Column2 begins -->
+                      <div id="gallery">
+                          <br><img src="images/cuisines/cuisine1.jpg" id="main-img4">
+                          
+                          <ul class="switch">
+                            <li><img src="images/cuisines/cuisine2.jpg" /></li>
+                            <li><img src="images/cuisines/cuisine3.jpg" /></li>
+                            <li><img src="images/cuisines/cuisine4.jpg" /></li>
+                            <li><img src="images/cuisines/cuisine1.jpg" /></li>
+                        </ul>
+                      </div>
+                      </div>    <!-- Column2 ends -->
+                    </div>      <!-- Row ends -->
+                  </div>        <!-- Local Cuisines Tab ends -->
+                  
+                </div>          <!-- Tab panes ends -->
+              </div>            <!-- Tabbed Boxes end -->
+                  
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/hangzhou.js"></script>
+        
+    </body>
+</html>

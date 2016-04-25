@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paradise on the Earth</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <meta charset="utf-8"> <!--Set characters to display properly -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Forces IE to use latest rendering engine-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- "Viewport" is the base area to let browser to use the full screen space -->
+       
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    
+    <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">杭州</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="hangzhou.html">Hangzhou</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+      </div>
+    </nav>      <!-- End of Navigation Header -->
+    
+    <div class="jumbotron bg">     <!-- Jumbotron starts -->
+      <div class="container">
+        <p id="english"><br>Hangzhou &#x2014 Paradise on the Earth!</p>
+        <button onclick="newTask() ;">Chinese</button>
+        
+<!-- Change Heading from English to Chinese -->    
+        <script>    
+            function  newTask () {
+            var changeText =
+            document.getElementById("english");
+            changeText.innerHTML= "<br><em><strong>杭  州  &#x2014  人 间 天 堂!</strong></em>";
+            }
+        </script>
+        <button><a href="index.html">English</a></button>
+     
+      </div>
+    </div>                      <!-- Jumbotron ends -->
+   
+    <div class="container-fluid">
+        <h4 class="center">Sitting on the southeastern coastal line, Hangzhou is a medium-sized city. During the Song Dynasty, the city was the capital of the dynasty.</h4>
+        <h4 class="center">Hangzhou is known as "Paradise on Earth" for its beauty as well as renowned as “Home of Silk”, “Tea Capital”, “Town of Fish and Rice” for its rich resources.</h4>
+    </div>
+    <br>
+   
+       <!-- class="carousel"  starts -->
+       <div class="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> <!-- Carousel starts -->
+                <!-- Indicators start -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                </ol>   <!-- Indicators end -->
+                
+                <!-- Wrapper for Slides start -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/hzcity/hz1.jpg" "img-responsive">
+                        <div class="carousel-caption">
+                            <h3>City Flower: OSMANTHUS</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz2.jpg" "img-responsive">
+                        <div class="carousel-caption">
+                            <h3>Hangzhou City</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz3.jpg" "img-responsive">
+                        <div class="carousel-caption">
+                            <h3>West Lake</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz4.jpg" "img-responsive">
+                        <div class="carousel-caption">
+                            <h3>Farmers Market</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz5.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h3>Herbal Medicine Store</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz6.jpg" class="img-responsive inline-block">
+                        <div class="carousel-caption">
+                            <h3>Local Food</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/hzcity/hz7.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h3>1-Hour Free City Bikes</h3>
+                        </div>
+                    </div>
+                    
+                </div>      <!-- Wrapper for Slides end -->
+                
+                <!-- Controls start -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </div>          <!-- Carousel ends -->
+         </div>             <!-- class="carousel" ends -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/hangzhou.js"></script>
+    
+    </body>
+</html>
